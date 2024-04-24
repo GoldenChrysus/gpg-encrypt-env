@@ -1,0 +1,6 @@
+- id: gpg-encrypt-env
+  name: GPG Encrypt Env
+  description: GPG encrypt .env*.local files
+  pass_filenames: false
+  entry: gpg-encrypt-env
+  always_run: true

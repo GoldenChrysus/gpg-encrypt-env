@@ -1,0 +1,22 @@
+[project]
+name = "gpg_encryp_env"
+dynamic = ["version"]
+description = "GPG encrypt env files"
+classifiers = ["Programming Language :: Python :: 3 :: Only"]
+keywords = ["git", "pre-commit", "gpg", "env"]
+authors = [
+    { name = "Iconiplex LLC", email = "info@iconiplex.com" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+code = "https://github.com/GoldenChrysus/gpg-encrypt-env"
+tracker = "https://github.com/GoldenChrysus/gpg-encrypt-env/issues"
+
+[project.scripts]
+gpg-encrypt-env = "gpg_encrypt_env.hook:main"
+
+[build-system]
+requires = ["setuptools>=65", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
